@@ -9,3 +9,5 @@
 - git commit -m 'beskrivning av ändringar' 	-- sparar alla ändringar som en ny version av repositoryt
 - git push 	-- skickar upp ändringarna till github
 
+### ImageJ Convention
+- Call macro with arguments always uses "|"-character as a separator. Example: runMacro("mymacro", "80|100|hellos);

@@ -188,7 +188,7 @@ for (fileNumber=1; fileNumber<lengthOf(files); fileNumber++){ //loop to iterate 
 			saveAs("Results",activePath+"TotalClusterESResults.xls");
 	
 			//make cluster analysis top
-			clusterTopMaskID = clusterAnalysisRF(ratioLogID, 1, 0.1, 10);
+			clusterTopMaskID = clusterAnalysisRF(ratioID, 1, 0.1, 10);
 			selectImage(clusterTopMaskID);
 			run("Invert", "stack");
 			saveAs("Tiff",activePath+titleCut+"clusterTopMask");
@@ -201,7 +201,7 @@ for (fileNumber=1; fileNumber<lengthOf(files); fileNumber++){ //loop to iterate 
 			saveAs("Results",activePath+"TotalClusterTopResults.xls");
 	
 			//make cluster analysis bottom
-			clusterBottomMaskID = clusterAnalysisRF(ratioLogID, 0, 0.1, 10);
+			clusterBottomMaskID = clusterAnalysisRF(ratioID, 0, 0.1, 10);
 			selectImage(clusterBottomMaskID);
 			run("Invert", "stack");
 			saveAs("Tiff",activePath+titleCut+"clusterBottomMask");
@@ -758,8 +758,8 @@ exit();
 		run("Fill Holes", "stack");
 		setBatchMode(false);
 
-		run("Analyze Particles...", "size="+floor((((width+width)/8)*((height+height)/8)*PI))+"-Infinity pixel show=Masks exclude stack");
-		print("size limit = " + floor((((width+width)/8)*((height+height)/8)*PI)));
+		run("Analyze Particles...", "size="+floor((((width+width)/16)*((height+height)/16)*PI))+"-Infinity pixel show=Masks exclude stack");
+		print("size limit = " + floor((((width+width)/16)*((height+height)/16)*PI)));
 		//setBatchMode(true);		
 
 		rename("analyzed");

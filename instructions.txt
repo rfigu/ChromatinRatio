@@ -1,0 +1,29 @@
+Setup
+======================
+1. Install Git Bash.
+2. Start Git Bash.
+3. Navigate to where you want the ChromatinRatio folder to be by typing (in Git Bash): cd c:/path/to/folder/beforeChromatinRatio/
+4. Type the following command in Git Bash: git clone git@github.com:rfigu/ChromatinRatio.git
+5. If it doesn't work, ask someone with Git knowledge (you probably need to get access to the repository and setup SSH keys)
+======================
+
+Do this before working on any file
+======================
+1. Start Git Bash.
+2. Navigate to the ChromatinRatio folder by typing (in Git Bash): cd c:/path/to/ChromatinRatio/
+   For example, if this folder is on the desktop, type: cd ~/Desktop/Chromatin_kör_all\ data/ChromatinRatio/
+3. Type the following command in Git Bash: git pull
+4. Start making changes to the files.
+======================
+
+To save changes
+======================
+1. Start Git Bash.
+2. Type the following commands in Git Bash:
+git pull
+git add --all
+git commit -m "some message about the changes"
+git push
+======================
+
+

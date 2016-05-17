@@ -16,7 +16,7 @@ Do this before working on any file
 4. Start making changes to the files.
 ======================
 
-To save changes
+To save changes (remember to write what you have done below)
 ======================
 1. Start Git Bash.
 2. Type the following commands in Git Bash:
